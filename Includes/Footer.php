@@ -5,7 +5,5 @@
     </footer>
 
     </div> <!-- // End #grady-wrapper -->
-
-<script src="<?php echo $cdn1; ?>Scripts/GradyCapital-Deferred.js"></script>
 </body>
 </html>

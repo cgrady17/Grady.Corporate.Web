@@ -1,0 +1,180 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+// Include custom font
+.include-custom-font('walkway/ultrabold_regular/Walkway_UltraBold-webfont'; bold; normal; 'Walkway-Ultrabold');
+.include-custom-font('Colaborate/ColabLig-webfont'; light; normal; 'Colaborate Light');
+.include-custom-font('Existence-Light/Existence-Light-webfont'; light; normal; 'Existence Light');
+.include-custom-font('Existence-Light/Existence-StencilLight-webfont'; light; normal; 'Existence StencilLight');
+
+html, body, select, input {
+  font-family: 'Colaborate Light';
+  font-size: 15px;
+}
+
+.normal-weight {
+  font-weight: normal;
+}
+
+.bold-weight, .strong {
+  font-weight: bold;
+}
+
+#header-title {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header-title h3 {
+  margin: 0.6em;
+}
+
+h3#header-welcome {
+  margin-top: 0;
+}
+
+#header-title > h1 {
+  font-family: 'Walkway-Ultrabold';
+  font-size: 3rem;
+  margin: 0;
+}
+
+#grady-wrapper {
+  width: 100%;
+  max-width: @containerWidth;
+  margin: 0 auto;
+}
+
+#header-wrapper {
+  width: 100%;
+  background: @header-color;
+  -webkit-box-shadow: inset 0px -10px 10px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    inset 0px -10px 10px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         inset 0px -10px 10px 0px rgba(50, 50, 50, 0.5);
+}
+
+#header-title > #home-menu {
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+
+#header-title > #home-menu > li {
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+#header-title > #home-menu > li > a {
+  color: white;
+  padding: 1.3em;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+#header-title > #home-menu > li > a:hover {
+  background: white;
+  color: @header-color;
+}
+
+#page-header-wrapper > header {
+  width: 100%;
+  max-width: @containerWidth;
+  position: relative;
+  margin: 0 auto;
+}
+
+#page-header-wrapper {
+  width: 100%;
+  background: @header-color;
+}
+
+#page-header-wrapper > header > h1 {
+  margin: 0;
+  padding-top: 8px;
+  font-family: 'Walkway-Ultrabold';
+  font-size: 3rem;
+}
+
+#page-header-wrapper > header > h1 > a {
+  text-decoration: none;
+}
+
+#page-header-wrapper > header > h1 > a:visited {
+  color: black;
+}
+
+#page-header-wrapper > header > h3 {
+  margin-top: 5px;
+  display: inline-block;
+  margin-left: 73px;
+}
+
+#page-header-wrapper > header > #page-menu {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+#page-header-wrapper > header > #page-menu > li {
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+#page-header-wrapper > header > #page-menu > li > a {
+  color: white;
+  padding: 1.83em 1.3em;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+#page-header-wrapper > header > #page-menu > li > a:hover, #page-header-wrapper > header > #page-menu > li > a.active {
+  background: white;
+  color: @header-color;
+}
+
+.page-header-image-container {
+}
+
+.page-header-image {
+  width: 100%;
+  position: relative;
+}
+
+.page-header-image > img {
+  width: 100%;
+  height: auto;
+}
+
+.header-image-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  margin-left: -50%;
+  height: 140px;
+  margin-top: -70px;
+  text-align: center;
+  text-shadow: 0 0 30px rgba(8,58,61, .2);
+}
+
+.header-image-text > h1 {
+  color: white;
+  margin: 0;
+}
+
+.header-image-text > h3 {
+  color: white;
+  margin: 0.2em;
+}

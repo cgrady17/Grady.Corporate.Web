@@ -1,0 +1,13 @@
+// Custom Font-Face
+.include-custom-font(@path; @weight; @style; @font-family){
+  @font-face{
+    font-family: @font-family;
+    src:url('../Fonts/@{path}.eot');
+    src:url('../Fonts/@{path}.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/@{path}.woff') format('woff'),
+    url('../Fonts/@{path}.ttf') format('truetype'),
+    url('../Fonts/@{path}.svg#icon') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
